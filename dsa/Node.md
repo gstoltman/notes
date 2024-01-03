@@ -17,8 +17,8 @@ node2 = Node(2)
 node3 = Node(3)
 
 # Link nodes
-node1.next_node = node2
-node2.next_node = node3
+node1.next = node2
+node2.next = node3
 
 # Access data in nodes
 print(node1.data)  # Output: 1
@@ -29,5 +29,5 @@ print(node3.data)  # Output: 3
 current_node = node1
 while current_node:
     print(current_node.data)
-    current_node = current_node.next_node
+    current_node = current_node.next
 ```
